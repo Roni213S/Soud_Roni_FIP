@@ -1,0 +1,1055 @@
+/*
+Couples Resort Responsive Build
+4 column grid as per XD file
+ */
+
+/*
+    CSS Guide
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer
+    9.  Spa Services
+    10. Spa Plans
+    11. SPA Policies and Information
+    12. Packages
+    13. Who We Are
+    14. Book Now Button
+    15. Rental Rates of Sports Equipment
+    16. Extra Fees
+    17. Booking
+    18. Valentines Collage
+    19. Location Info
+    20. Reservations
+    21. Questions and Final Note
+    22. Desktop Booking
+    23. Desktop -Valentines Collage
+    24. Desktop -Location Info
+    25. Desktop -Reservations
+    26. Desktop -Questions and Final Note
+ */ 
+
+
+ /* 1. ---General Styles--- */
+
+body {
+   color: #505050;
+   font-family: 'Sanchez', 'Times New Roman', serif;
+}
+
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+   font-size: 14px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+.cr-red {
+   color: #9a2018;
+}
+
+/* 2. ---Main Nav--- */
+
+#main-nav label img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-bottom: 20px;
+}
+
+#main-nav input, #burger-con {
+  display: none;
+}
+
+/* ~ sibling selector */
+
+#main-nav input:checked ~ #burger-con {
+  display: block;
+}
+
+#main-nav input:checked ~ label img {
+  transform: rotate(90deg);
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: #626262;
+}
+
+#main-nav ul li {
+  border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:first-child {
+  border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+  margin-bottom: 40px;
+}
+
+#logo {
+  margin-bottom: 20px;
+  max-width: 382px;
+}
+
+/* 3. ---Hero Images--- */
+
+#hero {
+  background: url(../images/hero-main.jpg) no-repeat;
+  height: 200px;
+}
+
+#hero-spa {
+  background: url(../images/hero-spa.jpg) no-repeat;
+  height: 200px;
+}
+
+#hero-packages {
+  background: url(../images/hero-packages.jpg) no-repeat;
+  height: 200px;
+}
+
+#hero-booking {
+  background: url(../images/hero-booking.jpg) no-repeat;
+  height: 200px;
+}
+
+.book-now {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 16px;
+  transition: all 500ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: rgb(196, 28, 28);
+}
+
+#book-now-button {
+  height: 67px;
+}
+
+#hero-heading-box {
+  align-self: end;
+}
+
+.hero-img-h2, .hero-img-h3 {
+  background: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.hero-img-h2 span, .hero-img-h3 span {
+  color: #9a2018;
+  font-size: 12px;
+}
+
+.line-separator {
+  margin-top: 20px;
+  border-top: solid 3px #CF6666;
+  padding-top: 20px;
+}
+
+.mini-line-separator {
+  margin: 20px 35px;
+  border-top: solid 2px #CF6666;
+}
+
+#hero-summary p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+/* 4. --- Hero Image Contact--- */
+
+.fas {
+  font-size: 42px;
+  color: #9a2018;
+  margin: 0 auto;
+  float: left;
+}
+
+.fa-mobile-alt {
+  margin-right: 10px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+}
+
+.fa-map-marker-alt {
+  margin-right: 10px;
+}
+
+#contact {
+  font-size: 11px;
+  background-color: #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* 5. ---Why Choose Us--- */
+
+#why-choose-us-nav {
+  padding-top: 20px;
+}
+
+#why-choose-us-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#why-choose-us-nav ul li {
+  margin-bottom: 15px;
+}
+
+#why-choose-us-nav ul li a {
+  color: inherit;
+  padding: 5px;
+}
+
+#why-choose-us-nav ul li a.selected {
+  border-left: #9a2018 solid 5px;
+}
+
+#why-choose-us-hero-con {
+  background: url(../images/why-choose-us-hero.jpg) no-repeat;
+  height: 195px;
+}
+
+#why-choose-us-heading-box {
+  align-self: end;
+}
+
+.why-choose-us-image {
+  float: left;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.why-choose-us-image-con h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.why-choose-us-image-con p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.why-choose-us-image-con a {
+  color: #707070;
+  font-size: 12px;
+}
+
+#why-choose-us-bottom-nav {
+  background-color: #CF6666;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#why-choose-us-bottom-nav ol {
+  list-style-type: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#why-choose-us-bottom-nav ol li {
+  display: inline;
+}
+
+#why-choose-us-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+}
+
+/* 6. ---About & FAQ--- */
+
+#about-hero-con {
+  background: url(../images/about-us-hero.jpg) no-repeat;
+  height: 195px;
+}
+
+#about-hero-heading-box {
+  align-self: end;
+}
+
+#about-us-text {
+  padding-bottom: 60px;
+}
+
+#about-us-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+#about-us-text-column2 {
+  font-style: italic;
+}
+
+#faq-con {
+  background-color: #f4f4f4;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+#faq-con h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#faq-con h2 span {
+  color: #9a2018;
+  font-size: 16px;
+}
+
+.faq-items {
+  margin-bottom: 16px;
+}
+
+.faq-items h3 {
+  background: #e8e7e7;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.faq-items ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.faq-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid #9a2018;
+}
+
+.faq-items a {
+  color: inherit;
+  font-size: 13px;
+}
+
+#faq-text-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 7. ---Contact--- */
+
+#contact-hero-con {
+  background: url(../images/contact-hero.jpg);
+  height: 195px;
+}
+
+#contact-hero-heading-box {
+  align-self: end;
+}
+
+#contact-hero-text {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#contact-hero-address p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#contact-hero-address {
+  margin-bottom: 30px;
+}
+
+#contact-hero-address h3 {
+  margin-bottom: 25px;
+}
+
+#contact-hero-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-hero-form input, textarea {
+  padding: 22px;
+  border: 2px solid #d6d6d6;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font: inherit;
+  width: auto;
+}
+
+#contact-hero-form textarea {
+  height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+  padding: 12px 28px;
+  background: #9a2018;
+  color: #fff;
+  border: none;
+  transition: all 200ms ease-in;
+  width: 150px;
+  align-self: flex-end;
+}
+
+#contact-hero-form input[type="submit"]:hover {
+  background-color: #626262;
+  border-radius: 0;
+}
+
+/* 8. ---Footer--- */
+
+.footer-hero {
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+.footer-hero h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.footer-privacy .line-separator {
+  margin-top: 0px;
+}
+
+.footer-contact-info h3 {
+  font-size: 23px;
+}
+
+.footer-contact-info p {
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 11px;
+}
+
+/* 9. ---Spa Services--- */
+
+.spa-services-flex {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+#algonquin-spa-text {
+  margin: 20px 0px;
+}
+
+#eminence-organics {
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+/* 10. ---Spa Plans--- */
+
+#spa-plans-hero-con {
+  background: url(../images/spa-plans-hero.jpg) no-repeat;
+  height: 195px;
+}
+
+#spa-plans-heading-box {
+  align-self: end;
+}
+
+summary {
+  background-color: #e8e7e7;
+  padding: 15px;
+}
+
+#plans-list-con h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 1px;
+  border-bottom: solid 2px #CF6666;
+}
+
+.plans-list-items {
+  margin-bottom: 16px;
+}
+
+.plans-list-items div{
+  padding: 0px 12px;
+}
+
+.plans-list-items h3 {
+  color: #868686;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.plans-list-items p {
+  margin-top: 10px;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+#hand-treatment-note {
+  text-align: center;
+}
+
+/* 11. SPA Policies and Information */
+
+#spa-policies-con {
+  background: url(../images/spa-policies-hero.jpg) no-repeat;
+  height: 195px;
+}
+
+#spa-policies-heading-box {
+  align-self: end;
+}
+
+#policies-text p {
+  margin-bottom: 20px;
+}
+
+#policies-text h3 {
+  color: #868686;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.read-more {
+  background-color: unset;
+  padding: 0px;
+}
+
+#unforseen-text h4 {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* 12. ---Packages--- */
+
+#spa-packages-heading-box {
+  align-self: end;
+}
+
+.spa-packages-flex {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.spa-packages-flex summary {
+  line-height: 10px;
+  margin-bottom: 0px;
+  background-color: unset;
+  padding: 7px;
+}
+
+#packages-selected {
+  border-bottom: solid 4px #CF6666;
+  left: 0px;
+  width:fit-content;
+  margin-right: 12px;
+}
+
+#packages-list-con h3 {
+  font-size: 14px;
+  padding-bottom: 1px; 
+  margin-right: 12px;
+}
+
+#packages-list-con h2 {
+  font-size: 15px;
+  margin-top: 13px;
+  padding-bottom: 0px;
+  border-bottom: solid 2px #CF6666;
+}
+
+.packages-list-items {
+  margin-bottom: 16px;
+}
+
+.packages-list-items div{
+  padding: 0px 12px;
+}
+
+.packages-list-items h3 {
+  color: #707070;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.packages-list-items p {
+  margin-top: 10px;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.packages-list-items ol li {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+#all-inclusive-note {
+  text-align: center;
+  width:fit-content;
+  font-size: 13px;
+}
+
+/* 13. ---Who We Are--- */
+
+#who-we-are {
+  background-color: #D9D9D9;
+  text-align: center;
+}
+
+#who-we-are h2 {
+  font-size: 16px;
+  border-bottom: unset;
+  padding: 10px;
+}
+
+#who-we-are img {
+  width: 358px;
+  border-bottom: solid 4px #CF6666;
+}
+
+#who-we-are p {
+  margin: 0px;
+  padding-bottom: 30px;
+}
+
+/* 14. Book Now Button */
+
+#book-now-section {
+  position: relative;
+  margin: 30px 0px 115px 0px;
+}
+
+#book-now-section button{
+  padding: 26px 40px;
+  background: #9a2018;
+  color: #fff;
+  border: none;
+  transition: all 200ms ease-in;
+  width: 150px;
+  border-radius: 5px;
+  position:absolute;
+  left: 30%;
+  font-size: 15px;
+}
+
+#book-now-section button:hover {
+  background-color: rgb(178, 9, 9);
+}
+
+/* 15. Rental Rates of Sports Equipment */
+
+#rental-rates-con {
+  background: url(../images/rental-rates-hero.jpg) no-repeat;
+  height: 195px;
+}
+
+#rental-rates-heading-box {
+  align-self: end;
+}
+
+#rental-list-con h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  border-bottom: solid 2px #CF6666;
+}
+
+#rental-list-con p {
+  margin-top: 1px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+
+#rental-list-con ol {
+  margin-top: 6px;
+}
+
+#rental-list-con ol li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.rental-list-items div {
+  margin-bottom: 20px;
+}
+
+.rental-list-items {
+  margin-bottom: 16px;
+}
+
+/* 16. Extra Fees */
+
+#extra-fees {
+  padding-bottom: 0px;
+  background-color: #D9D9D9;
+}
+
+#extra-fees h2 {
+  font-size: 14px;
+  padding-top: 10px;
+  margin-bottom: 12px;
+}
+
+#extra-fees p {
+  font-size: 13px;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+#packages-footer {
+  margin-top: 0px;
+}
+
+/* 17. Booking */
+
+#booking-heading-box {
+  align-self: end;
+}
+
+#booking-text {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+#booking-text p{
+  font-size: 14px;
+  padding: 6px 0px;
+}
+
+#booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#booking-form input {
+  padding: 22px;
+  border: 2px solid #d6d6d6;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font: inherit;
+  width: auto;
+}
+
+#booking-form input[type="submit"] {
+  padding: 20px 28px;
+  background: #9a2018;
+  color: #fff;
+  border: none;
+  transition: all 200ms ease-in;
+  width: 210px;
+  align-self: center;
+}
+
+#booking-form input[type="submit"]:hover {
+  background-color: #626262;
+  border-radius: 0;
+}
+
+/* 18. Vallentines Collage */
+
+#valentines-hero-con {
+  background: url(../images/valentines-hero.jpg) no-repeat;
+  height: 195px;
+}
+
+#valentines-heading-box {
+  align-self: end;
+}
+
+#valentines-flex-con {
+  margin-bottom: 50px;
+}
+
+
+#valentines-flex-con h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 1px;
+  border-bottom: solid 2px #CF6666;
+}
+
+.valentines-flex {
+  display: flex;
+  align-items: center;
+}
+
+.valentines-flex p {
+font-size: 12px;
+background-color: #505050;
+color: #d6d6d6;
+padding: 9px 0px 9px 3px;
+margin: 2px;
+}
+
+.valentines-flex img {
+  margin: 2px;
+  width: 187px;
+}
+
+/* 19. Location Info */
+
+.fa-map {
+  margin-right: 10px;
+}
+
+#location {
+  font-size: 10px;
+  background-color: #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* 20. Reservations */
+
+#reservations-hero-con {
+  height: 120px;
+}
+
+#reservations-heading-box {
+  align-self: end;
+}
+
+#reservations-list-con h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  border-bottom: solid 2px #CF6666;
+}
+
+#reservations-list-con p {
+  margin-top: 1px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+
+#reservations-list-con li {
+  margin-top: 6px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+#reservations-list-con li li {
+  margin-top: 6px;
+
+}
+
+.reservations-list-items div {
+  margin-bottom: 20px;
+}
+
+.reservations-list-items {
+  margin-bottom: 16px;
+}
+
+/* 21. Questions and Final Note */
+
+#questions h2{
+  margin-top: 10px;
+}
+
+#questions p{
+  margin-top: 10px;
+}
+
+#booking-footer {
+  margin-top: 0px;
+}
+
+
+
+/* 22. Desktop Booking */
+
+#desktop-hero-booking {
+  background: url(../images/hero-booking.jpg) no-repeat;
+  height: 200px;
+}
+#desktop-booking-heading-box {
+  align-self: end;
+}
+
+#booking-text {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+#booking-text p{
+  font-size: 14px;
+  padding: 6px 0px;
+}
+
+#booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#booking-form input {
+  padding: 22px;
+  border: 2px solid #d6d6d6;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font: inherit;
+  width: auto;
+}
+
+#booking-form input[type="submit"] {
+  padding: 20px 28px;
+  background: #9a2018;
+  color: #fff;
+  border: none;
+  transition: all 200ms ease-in;
+  width: 210px;
+  align-self: center;
+}
+
+#booking-form input[type="submit"]:hover {
+  background-color: #626262;
+  border-radius: 0;
+}
+
+/* 23. Desktop - Vallentines Collage */
+
+#valentines-hero-con {
+  background: url(../images/valentines-hero.jpg) no-repeat;
+  height: 195px;
+}
+
+#valentines-heading-box {
+  align-self: end;
+}
+
+#valentines-flex-con {
+  margin-bottom: 50px;
+}
+
+
+#valentines-flex-con h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 1px;
+  border-bottom: solid 2px #CF6666;
+}
+
+.valentines-flex {
+  display: flex;
+  align-items: center;
+}
+
+.valentines-flex p {
+font-size: 12px;
+background-color: #505050;
+color: #d6d6d6;
+padding: 9px 0px 9px 3px;
+margin: 2px;
+}
+
+.valentines-flex img {
+  margin: 2px;
+  width: 187px;
+}
+
+/* 24. Desktop - Location Info */
+
+.fa-map {
+  margin-right: 10px;
+}
+
+#location {
+  font-size: 10px;
+  background-color: #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* 25. Desktop - Reservations */
+
+#reservations-hero-con {
+  height: 120px;
+}
+
+#reservations-heading-box {
+  align-self: end;
+}
+
+#reservations-list-con h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  border-bottom: solid 2px #CF6666;
+}
+
+#reservations-list-con p {
+  margin-top: 1px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+
+#reservations-list-con li {
+  margin-top: 6px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+#reservations-list-con li li {
+  margin-top: 6px;
+
+}
+
+.reservations-list-items div {
+  margin-bottom: 20px;
+}
+
+.reservations-list-items {
+  margin-bottom: 16px;
+}
+
+/* 26. Desktop - Questions and Final Note */
+
+#questions h2{
+  margin-top: 10px;
+}
+
+#questions p{
+  margin-top: 10px;
+}
+
+#booking-footer {
+  margin-top: 0px;
+}
