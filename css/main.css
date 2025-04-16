@@ -783,7 +783,22 @@ summary {
 #booking-form input[type="submit"]:hover {
   background-color: #626262;
   border-radius: 0;
+  position: relative;
 }
+
+#booking-form input[type="submit"]:hover +span::after {
+  content: '\1F389';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 24px;
+  position: absolute;
+  top: 5px;
+  right: 250px;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
 
 /* 18. Vallentines Collage */
 
